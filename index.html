@@ -632,6 +632,36 @@
       opacity: 1;
     }
 
+    /* QR Section */
+    .qr-section {
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .qr-content h2 {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+
+    .qr-content > p {
+      color: var(--text-muted);
+      margin-bottom: 30px;
+    }
+
+    .qr-wrapper {
+      display: inline-block;
+      padding: 20px;
+      background: var(--glass);
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      border: 3px solid var(--accent);
+      box-shadow: 0 0 30px rgba(0, 191,255,0.3);
+    }
+
+    .qr-wrapper img {
+      display: block;
+    }
+
     /* Footer */
     footer {
       padding: 40px 0;
@@ -886,6 +916,18 @@
               <div class="contact-value">074 090 9569</div>
             </div>
           </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="qr-section">
+    <div class="container">
+      <div class="qr-content">
+        <h2>Scan to Visit Us</h2>
+        <p>Scan the QR code to view our website</p>
+        <div class="qr-wrapper">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://tcode-portfolio.vercel.app&bgcolor=0D0D0D&color=00BFFF" alt="QR Code">
         </div>
       </div>
     </div>
